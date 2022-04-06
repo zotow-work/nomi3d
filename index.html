@@ -14,6 +14,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -101,7 +102,122 @@
         </div>
     </section>
 
+    <section class="portfolio">
+        <!-- Tabs -->
+        <nav>
+            <div class="container tabs">
+                <span class="tabs__item gray-text active" data-name="all">All portfolio</span>
+                <span class="tabs__item gray-text" data-name="orbital">Orbital</span>
+                <span class="tabs__item gray-text" data-name="tour">Virtual Tour</span>
+                <span class="tabs__item gray-text" data-name="render">Rendering</span>
+                <span class="tabs__item gray-text" data-name="film">Filmmaking</span>
+            </div>
+            <div class="border-bottom"></div>
+        </nav>
+        
+        <!-- Colcade masonry layout + Fancybox gallery -->
+        <!-- columns -->
+        <div class="grid">
+            <div class="grid-col grid-col--1"></div>
+            <div class="grid-col grid-col--2"></div>
+            <div class="grid-col grid-col--3"></div>
+            <!-- items -->
+            <div class="grid-item" data-name="orbital">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/160 Boulevard Haussmann_exterior_001.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/160_Boulevard_Haussmann_exterior_001.webp">
+                        <img src="assets/portfolio/covers/160_Boulevard_Haussmann_exterior_001.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="tour">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/160 Boulevard Haussmann_exterior_002.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/160_Boulevard_Haussmann_exterior_002.webp">
+                        <img src="assets/portfolio/covers/160_Boulevard_Haussmann_exterior_002.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="render">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/18 Rue du 14 Juillet_ext_03_v3_highpass result_inst.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/18_Rue_du_14_Juillet_ext_03_v3_highpass_result_inst.webp">
+                        <img src="assets/portfolio/covers/18_Rue_du_14_Juillet_ext_03_v3_highpass_result_inst.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="film">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/27 Rue Paul Vaillant Couturier_01.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/27_Rue_Paul_Vaillant_Couturier_01.webp">
+                        <img src="assets/portfolio/covers/27_Rue_Paul_Vaillant_Couturier_01.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="orbital">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/27 Rue Paul Vaillant Couturier_int_01.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/27_Rue_Paul_Vaillant_Couturier_int_01.webp">
+                        <img src="assets/portfolio/covers/27_Rue_Paul_Vaillant_Couturier_int_01.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="tour">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/67450 Mundolsheim_France_01.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/67450_Mundolsheim_France_01.webp">
+                        <img src="assets/portfolio/covers/67450_Mundolsheim_France_01.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="render">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/67450 Mundolsheim_France_02.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/67450_Mundolsheim_France_02.webp">
+                        <img src="assets/portfolio/covers/67450_Mundolsheim_France_02.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="film">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/67450 Mundolsheim_France_interior_01.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/67450_Mundolsheim_France_interior_01.webp">
+                        <img src="assets/portfolio/covers/67450_Mundolsheim_France_interior 01.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item" data-name="orbital">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/67450 Mundolsheim_France_interior_02.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/67450_Mundolsheim_France_interior_02.webp">
+                        <img src="assets/portfolio/covers/67450_Mundolsheim_France_interior_02.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+            <div class="grid-item tour" data-name="tour">
+                <a data-caption="Sunrise Image" data-fancybox="all" href="assets/portfolio/78 Rue Paul Vaillant Couturier_001.jpg">
+                    <h3>Sunrise Image</h3>
+                    <picture>
+                        <source type="image/webp" srcset="assets/portfolio/covers/78_Rue_Paul_Vaillant_Couturier_001.webp">
+                        <img src="assets/portfolio/covers/78_Rue_Paul_Vaillant_Couturier_001.jpg" alt="Sunrise Image">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- JS -->
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
