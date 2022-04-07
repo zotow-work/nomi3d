@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -37,11 +37,19 @@
         <h1>3D visualisation, for which you will not be ashamed</h1>
 
         <!-- Video background -->
-        <video autoplay muted loop preload="metadata" class="bg-video" id="bgVideo">
+        <!-- <video autoplay muted loop preload="metadata" class="bg-video" id="bgVideo">
             <source type="video/webm" id="bgVideoWebm">
             <source type="video/mp4" id="bgVideoMp4">
         </video>
+        <div class="header__gradient"></div> -->
+        <video autoplay muted loop preload="metadata" poster="assets/video/NOMI_video backplate_v2-poster.jpg" class="bg-video">
+            <source media="(orientation: landscape)" src="assets/video/NOMI_video backplate_v2.webm" type="video/webm">
+            <source media="(orientation: landscape)" src="assets/video/NOMI_video backplate_v2.mp4" type="video/mp4">
+            <source media="(orientation: portrait)" src="assets/video/pexels-ivan-photo-10622156.webm" type="video/webm">
+            <source media="(orientation: portrait)" src="assets/video/pexels-ivan-photo-10622156.mp4" type="video/mp4">
+        </video>
         <div class="header__gradient"></div>
+
     </header>
 
     <section class="about">
@@ -104,7 +112,7 @@
 
     <section class="portfolio">
         <!-- Tabs -->
-        <nav>
+        <nav class="naw__tabs">
             <div class="container tabs">
                 <span class="tabs__item gray-text active" data-name="all">All portfolio</span>
                 <span class="tabs__item gray-text" data-name="orbital">Orbital</span>
@@ -214,6 +222,368 @@
             </div>
         </div>
     </section>
+
+    <section class="work">
+        <div class="container">
+            <div class="work__main">
+                <h2>What we do & what you need to expect</h2>
+                <div class="work__right-col">
+                    <p class="subtitle">
+                        We constantly strive to create compelling visuals. We focus on lighting and composition to make our images look equally believable and remarkable.</p>
+                    <p class="subtitle">
+                        We admit that we’re a little stubborn; we won’t stop until we’re satisfied. And you can bet that we’ll go out of our way to make sure that you are too.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <nav class="naw__tabs">
+                <div class="tabs">
+                    <span class="tabs__item gray-text active" data-name="stills">Stills</span>
+                    <span class="tabs__item gray-text" data-name="animation">Animation</span>
+                </div>
+                <div class="border-bottom"></div>
+            </nav>
+
+            <div class="workflow">
+                <!-- Stills -->
+                <div class="workflow__item" data-name="stills">
+                    <picture>
+                        <source type="image/webp" srcset="assets/workflow/stills/step-1_initial-meeting.webp">
+                        <img src="assets/workflow/stills/step-1_initial-meeting.jpg" alt="Initial meeting">
+                    </picture>
+                    <h3>STEP 1. Initial meeting</h3>
+                    <p>
+                        The first meeting is where we discuss the direction of the project. Important factors like lighting, furniture/styling and camera angles are discussed.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="stills">
+                    <video autoplay muted loop preload="metadata" poster="assets/workflow/stills/step-2_camera-angle-selection_poster.jpg" class="workflow__video">
+                        <source type="video/webm" src="assets/workflow/stills/step-2_camera-angle-selection.webm">
+                        <source type="video/mp4" src="assets/workflow/stills/step-2_camera-angle-selection.mp4">
+                    </video>
+                    <h3>STEP 2. Camera angle selection</h3>
+                    <p>
+                        We provide various angle options for each image for the client to choose from.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="stills">
+                    <picture>
+                        <source type="image/webp" srcset="assets/workflow/stills/step-3_preview.webp">
+                        <img src="assets/workflow/stills/step-3_preview.jpg" alt="Preview 1">
+                    </picture>
+                    <h3>STEP 3. Preview 1</h3>
+                    <p>
+                        From preview #1 our client will receive a finalised image with lighting, materials and textures perfected.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="stills">
+                    <picture>
+                        <source type="image/webp" srcset="assets/workflow/stills/step-4_final-image.webp">
+                        <img src="assets/workflow/stills/step-4_final-image.jpg" alt="Final Image">
+                    </picture>
+                    <h3>STEP 4. Final Image</h3>
+                    <p>
+                        The image is finalised and prepared in three formats (high res jpeg, web & print).
+                    </p>
+                </div>
+                <!-- Animation -->
+                <div class="workflow__item" data-name="animation">
+                    <video autoplay muted loop preload="metadata" poster="assets/workflow/animation/step-1_storyboard_poster.jpg" class="workflow__video">
+                        <source type="video/webm" src="assets/workflow/animation/step-1_storyboard.webm">
+                        <source type="video/mp4" src="assets/workflow/animation/step-1_storyboard.mp4">
+                    </video>
+                    <h3>STEP 1. Storyboard</h3>
+                    <p>
+                        We provide various angle options for each image for the client to choose from.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="animation">
+                    <video autoplay muted loop preload="metadata" poster="assets/workflow/animation/step-2_draft-start_poster.jpg" class="workflow__video">
+                        <source type="video/webm" src="assets/workflow/animation/step-2_draft-start.webm">
+                        <source type="video/mp4" src="assets/workflow/animation/step-2_draft-start.mp4">
+                    </video>
+                    <h3>STEP 2. Draft 1</h3>
+                    <p>
+                        The first meeting is where we discuss the direction of the project. Important factors like lighting, furniture/styling and camera angles are discussed.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="animation">
+                    <video autoplay muted loop preload="metadata" poster="assets/workflow/animation/step-3_draft-mid_poster.jpg" class="workflow__video">
+                        <source type="video/webm" src="assets/workflow/animation/step-3_draft-mid.webm">
+                        <source type="video/mp4" src="assets/workflow/animation/step-3_draft-mid.mp4">
+                    </video>
+                    <h3>STEP 3. Draft 2</h3>
+                    <p>
+                        The first meeting is where we discuss the direction of the project. Important factors like lighting, furniture/styling and camera angles are discussed.
+                    </p>
+                </div>
+                <div class="workflow__item" data-name="animation">
+                    <video autoplay muted loop preload="metadata" poster="assets/workflow/animation/step-4_final_poster.jpg" class="workflow__video">
+                        <source type="video/webm" src="assets/workflow/animation/step-4_final.webm">
+                        <source type="video/mp4" src="assets/workflow/animation/step-4_final.mp4">
+                    </video>
+                    <h3>STEP 4. Final</h3>
+                    <p>
+                        The first meeting is where we discuss the direction of the project. Important factors like lighting, furniture/styling and camera angles are discussed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-bg"></div>
+
+    <section class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq__questions">
+                <div class="faq__wrap">
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>How much do 3D Renders for off-the-plan property marketing cost?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Depending on the size, location, and chosen marketing channels, there are minimum requirements for 3D renders, and budgets can vary significantly.
+                            </p>
+                            <p>
+                                We recommend the following base renders for all projects:
+                            </p>
+                            <ul>
+                                <li>Exterior Render - What the development will look like within the surrounding environment.</li>
+                                <li>Standard Interior Package - Showing potential buyers what the interior space will look like, (kitchen/dining, living/outdoor balcony or courtyard & bathroom)</li>
+                            </ul>
+                            <p>
+                                Having completed more than 280 client projects, the following recommended image quantities & budgets apply to the majority of developments:
+                            </p>
+                            <ul>
+                                <li>Low Density = 3-5 renders starting from $13,000</li>
+                                <li>Medium Density = 7-18 renders starting from $30,000</li>
+                                <li>High Density = 20-40 renders starting from $80,000</li>
+                            </ul>
+                            <p>
+                                We believe that quality must always prevail against quantity. Emotive photorealistic 3D visualisations not only create an up-market feel for your project but can also increase click-through rates for your marketing campaigns.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>How long does it take to complete a typical 3D Render project?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                A project with 8-12 visualisations takes approximately 6-8 weeks including information collection, production & revisions.
+                            </p>
+                            <p>
+                                The most significant factor affecting timeframes is information availability. Engaging a 3D rendering company too early, when the design is still being developed, will cause delays and unexpected fees.
+                            </p>
+                            <p>
+                                For fast & easy workflow, ensure you have all information available before the 3D Render production process starts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>What is a typical process for a 3D Rendering project?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Each project is completed in three steps:
+                            </p>
+                            <ol>
+                                <li>
+                                    Information Collection - we gather all information about the project. This also includes a Project Briefing where we establish the visual direction for the images. We also discuss lighting & styling to match the project's location and target demographic.
+                                </li>
+                                <li>
+                                    Camera Angles - we will provide 4-6 view options for every image along with our own recommendations. You'll have an opportunity to pick an angle that best represents your development.
+                                </li>
+                                <li>
+                                    Previews & Revisions - after we present the first preview, you'll have 2x rounds of revisions to fine-tune your designs and finalise the image.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__wrap">
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>What information do we require to create the 3D Renders?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                3D photographs of incomplete architecture require a lot of detailed information to create a highly-photorealistic image. That includes the basics like floor plans & cabinetry elevations, finishes & materials, as well as smaller things like cornices, door handles or lights on the balcony.
+                            </p>
+                            <p>
+                                Below is an essential list of files we require to begin work on a 3D render project:
+                            </p>
+                            <ol>
+                                <li>Architectural Plans</li>
+                                <li>Landscaping Plans</li>
+                                <li>3D Model</li>
+                                <li>Exterior & Interior schedule of finishes</li>
+                                <li>Schedule of Inclusions</li>
+                            </ol>
+                            <p>
+                                Contact us if you are unsure you have all the required files. We are happy to go through the documentation and determine what is missing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>How to choose a 3D Rendering Studio?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                There are a lot of 3D rendering studios in Australia & overseas. However, not all of them have the resources & capability to create highly emotive, off-the-plan property marketing images.
+                            </p>
+                            <p>
+                                While most 3D rendering companies have one person working on the image from start to finish, property marketing images require specialised people from other industries such as interior designers, photographers and marketing experts. 
+                            </p>
+                            <p>
+                                Having a diverse team working on each image ensures that all aspects of a 3D render (angle, lighting and interior design) work well together and suit the specific project. We recommend asking your provider who will be working on your images.
+                            </p>
+                            <p>
+                                For projects with a budget of $10,000 or higher, we recommend working with a company that employs multiple 3D artists, as well as dedicated client managers or project managers to ensure each project runs smoothly.
+                            </p>
+                            <p>
+                                Lastly, be wary of companies offering discounted 3D property marketing images. If you are quoted less than $2,000 per image, it is likely that all images are produced by 1-2 people who may not be able to complete your project within a reasonable timeframe. This is also a sign that the work could be outsourced to overseas studios. While we do not see anything wrong with overseas 3D artists, they need to understand the Australian residential market, including general design language and marketing trends.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <div class="questions__head">
+                            <h3>Why pick Nomi3D?</h3>
+                            <div class="plus-minus">
+                                <span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                We specialise in off-the-plan property marketing. We've assembled a diverse team of specialists from the world of 3D, interior design, architecture, and photography to create compelling, vibrant, marketable 3D renders.
+                            </p>
+                            <p>
+                                Each of our images leverages the expertise of 4-6 people during the design process. This includes 3D modellers, 3D artists, interior designers, creative directors, project managers, and client coordinators, all making sure that the best possible image is being created for you.
+                            </p>
+                            <p>
+                                All client communication happens via online whiteboards with easy-to-use tools so you can provide clear feedback. You'll be able to track your project, from start to finish, with on-image comments and visual status updates.
+                            </p>
+                            <p>
+                                As an established, highly systemised business, with detailed, well-documented processes for each task, we always deliver on our promised deadlines. Whether you need 5 images or 50.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container wrapper">
+            <div class="contacts_connect">
+                <h2>Connect with us</h2>
+                <a href="tel:+380505016143" class="contacts_phone">+38 (050) 501 61 43</a>
+                <a href="mailto:info@nomi3d.com">info@nomi3d.com</a>
+                <p class="contacts__messangers gray-text">
+                    <a href="#">WhatsApp</a>&nbsp; /&nbsp;
+                    <a href="#">Viber</a>&nbsp; /&nbsp;
+                    <a href="#">Telegram</a>&nbsp; /&nbsp;
+                    <a href="#">Botim</a>
+                </p>
+
+                <p>
+                    Bohdan Khmelnytsky 35, Dnipro,<br>
+                    49055, Ukraine
+                </p>
+
+                <nav>
+                    <a href="#" class="contacts__social">
+                        <svg class="icon">
+                            <use xlink:href="assets/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="contacts__social">
+                        <svg class="icon">
+                            <use xlink:href="assets/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="contacts__social">
+                        <svg class="icon">
+                            <use xlink:href="assets/sprite.svg#behance"></use>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+
+            <form action="" method="POST" class="contacts__form">
+                <input type="text" placeholder="Name" class="field">
+                <input type="email" placeholder="E-mail" class="field">
+                <input type="text" placeholder="Company (optional)" class="field">
+                <div class="contacts__btn-agreeing">
+                    <input type="submit" value="Send a mail">
+                    <div class="form__agreeing gray-text small-text">
+                        By submitting this form you are agreeing with our <a href="#" class="gray-text">privacy policy.</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__left-col">
+            <a href="/">
+                <svg width="114" height="27" viewBox="0 0 114 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 26.501V0.500977H7.9L8 3.55098H8.1C9.2 2.31764 10.4333 1.41764 11.8 0.850978C13.1667 0.284311 14.75 0.000976562 16.55 0.000976562C19.6167 0.000976562 21.8667 0.850977 23.3 2.55098C24.7667 4.21764 25.5 6.86764 25.5 10.501V26.501H17.15V12.151C17.15 10.2843 16.85 8.93431 16.25 8.10098C15.65 7.26764 14.6833 6.85098 13.35 6.85098C12.3833 6.85098 11.5167 7.05098 10.75 7.45098C9.98333 7.81765 9.38333 8.33431 8.95 9.00098C8.51667 9.66764 8.3 10.451 8.3 11.351V26.501H0Z" fill="url(#paint0_linear_55_317)"/>
+                    <path d="M43.1547 27.001C38.7547 27.001 35.3714 25.851 33.0047 23.551C30.6714 21.2176 29.5047 17.8676 29.5047 13.501C29.5047 9.13431 30.6714 5.80098 33.0047 3.50098C35.3714 1.16764 38.7547 0.000976562 43.1547 0.000976562C47.588 0.000976562 50.9714 1.16764 53.3047 3.50098C55.6714 5.80098 56.8547 9.13431 56.8547 13.501C56.8547 17.8676 55.6714 21.2176 53.3047 23.551C50.9714 25.851 47.588 27.001 43.1547 27.001ZM43.1547 20.851C44.9547 20.851 46.288 20.251 47.1547 19.051C48.0547 17.8176 48.5047 15.9676 48.5047 13.501C48.5047 11.001 48.0547 9.15098 47.1547 7.95098C46.288 6.75098 44.9547 6.15098 43.1547 6.15098C41.388 6.15098 40.0547 6.75098 39.1547 7.95098C38.288 9.15098 37.8547 11.001 37.8547 13.501C37.8547 15.9676 38.288 17.8176 39.1547 19.051C40.0547 20.251 41.388 20.851 43.1547 20.851Z" fill="url(#paint1_linear_55_317)"/>
+                    <path d="M61.5234 26.501V0.500977H69.2734L69.3234 3.55098H69.4234C70.4568 2.35098 71.5568 1.46764 72.7234 0.900977C73.9234 0.300977 75.3234 0.000976562 76.9234 0.000976562C78.5568 0.000976562 79.9234 0.300977 81.0234 0.900977C82.1234 1.50098 82.9401 2.38431 83.4734 3.55098H83.5734C84.6734 2.31764 85.8568 1.41764 87.1234 0.850978C88.4234 0.284311 89.9068 0.000976562 91.5734 0.000976562C94.3068 0.000976562 96.2734 0.717643 97.4734 2.15098C98.7068 3.58431 99.3234 5.90098 99.3234 9.10098V26.501H91.1734V11.151C91.1734 9.65098 90.9401 8.56764 90.4734 7.90098C90.0401 7.20098 89.3234 6.85098 88.3234 6.85098C87.1901 6.85098 86.2734 7.26764 85.5734 8.10098C84.8734 8.90098 84.5234 9.98431 84.5234 11.351V26.501H76.3234V11.001C76.3234 9.60098 76.0901 8.56764 75.6234 7.90098C75.1568 7.20098 74.4568 6.85098 73.5234 6.85098C72.7901 6.85098 72.1234 7.05098 71.5234 7.45098C70.9568 7.81765 70.5068 8.33431 70.1734 9.00098C69.8401 9.66764 69.6734 10.451 69.6734 11.351V26.501H61.5234Z" fill="url(#paint2_linear_55_317)"/>
+                    <path d="M105.232 26.501V1.15098H113.732V26.501H105.232Z" fill="url(#paint3_linear_55_317)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_55_317" x1="56.8658" y1="0.000976562" x2="56.8658" y2="27.001" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.524058" stop-color="#005EB8"/>
+                    <stop offset="0.524158" stop-color="#FFD100"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_55_317" x1="56.8658" y1="0.000976562" x2="56.8658" y2="27.001" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.524058" stop-color="#005EB8"/>
+                    <stop offset="0.524158" stop-color="#FFD100"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_55_317" x1="56.8658" y1="0.000976562" x2="56.8658" y2="27.001" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.524058" stop-color="#005EB8"/>
+                    <stop offset="0.524158" stop-color="#FFD100"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_55_317" x1="56.8658" y1="0.000976562" x2="56.8658" y2="27.001" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.524058" stop-color="#005EB8"/>
+                    <stop offset="0.524158" stop-color="#FFD100"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            <span>© 2022 Nomi 3D</span>
+        </div>
+        <div class="footer__right-col">
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </nav>
+            <div class="footer__dev-copy">
+                Site by <a href="https://www.behance.net/vitalijpanchenko">Panchenko.</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS -->
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
