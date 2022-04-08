@@ -97,7 +97,12 @@ p:last-child {
 .grid-item.show {
     display: block;
 }
-.tabs__item .active,
+.active {
+        color: #292C2E;
+        border-bottom: 2px solid #071A52;
+        z-index: 6;
+    
+}
 .tabs__item:hover {
     color: #292C2E;
     border-bottom: 2px solid #071A52;
@@ -370,6 +375,7 @@ header .bg-video,
     padding: 1.25rem 0;
     border-bottom: 1px solid #E0E0E0;
     cursor: pointer;
+    /* background: url(../assets/plus.svg); */
 }
 .questions__item h3 {
     font-size: 1em;
@@ -841,3 +847,15 @@ footer a:hover {
         margin-bottom: 1rem;
     }
 }
+.minus {
+    display: none;
+}
+
+.plus {
+    display: none;
+}
+
+.faq_active {
+    display: block;
+}
+

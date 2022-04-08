@@ -50,5 +50,12 @@ const faqs = document.querySelectorAll('.questions__item');
 faqs.forEach(questions__item => {
     questions__item.addEventListener('click', () => {
         questions__item.classList.toggle('active');
+let findSign = questions__item;
+const minus = findSign.getElementsByClassName("minus");
+const plus = findSign.getElementsByClassName("plus");
+        minus[0].classList.toggle("faq_active");
+        plus[0].classList.toggle("faq_active");
     });
 });
+
+
