@@ -21,11 +21,31 @@ var colc = new Colcade( '.grid', {
     items: '.grid-item'
 });
 
+
+
+// FAQ accordion
+const faqs = document.querySelectorAll('.questions__item');
+
+faqs.forEach(questions__item => {
+    questions__item.addEventListener('click', () => {
+        questions__item.classList.toggle('active');
+let findSign = questions__item;
+const minus = findSign.getElementsByClassName("minus");
+const plus = findSign.getElementsByClassName("plus");
+        minus[0].classList.toggle("faq_active");
+        plus[0].classList.toggle("faq_active");
+    });
+});
+
 // Tabs
 const tabsItem = document.querySelector ('.tabs');
 const gridItem = document.querySelectorAll ('.grid-item');
-
+const stillsTabs = document.querySelectorAll("div[data-name='stills']");
+const animationTabs = document.querySelectorAll("div[data-name='animation']");
+const animationSelector = document.querySelector("span[data-name='animation']");
+const stillsSelector = document.querySelector("span[data-name='stills']");
 window.onload = ()=>{
+    //For images
     tabsItem.onclick = (selectedItem)=> {
         if (selectedItem.target.classList.contains('tabs__item')) {
             tabsItem.querySelector('.active').classList.remove('active');
@@ -42,20 +62,30 @@ window.onload = ()=>{
             });
         }
     };
+// For steps
+    animationSelector.onclick = (selected) => {
+      if (selected.target.classList.contains("tabs__item")) {
+        stillsSelector.classList.remove("active");
+        selected.target.classList.add("active");
+      }
+      stillsTabs.forEach((elem) => {
+        elem.classList.add("hide_tab");
+      });
+      animationTabs.forEach((elem) => {
+        elem.classList.remove("hide_tab");
+      });
+    };
+
+    stillsSelector.onclick = (selected) => {
+      if (selected.target.classList.contains("tabs__item")) {
+        animationSelector.classList.remove("active");
+        selected.target.classList.add("active");
+      }
+      animationTabs.forEach((elem) => {
+        elem.classList.add("hide_tab");
+      });
+      stillsTabs.forEach((elem) => {
+        elem.classList.remove("hide_tab");
+      });
+    };
 };
-
-// FAQ accordion
-const faqs = document.querySelectorAll('.questions__item');
-
-faqs.forEach(questions__item => {
-    questions__item.addEventListener('click', () => {
-        questions__item.classList.toggle('active');
-let findSign = questions__item;
-const minus = findSign.getElementsByClassName("minus");
-const plus = findSign.getElementsByClassName("plus");
-        minus[0].classList.toggle("faq_active");
-        plus[0].classList.toggle("faq_active");
-    });
-});
-
-

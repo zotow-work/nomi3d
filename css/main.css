@@ -859,3 +859,8 @@ footer a:hover {
     display: block;
 }
 
+.hide_tab{
+    display: none;
+}
+
+
