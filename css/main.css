@@ -912,8 +912,6 @@ height: 52px;
     font-size: 18px;
     line-height: 27px;
     margin: auto;
-  
-    font-feature-settings: 'kern'off;
     color: #292C2E;
 }
 
