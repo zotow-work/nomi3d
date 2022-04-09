@@ -90,22 +90,20 @@ window.onload = ()=>{
     };
 };
 
-// Закрытие попапа по клику на крестик
+// Close popup
 function closePopup() {
   let closeThis = document.querySelector(".popup");
   let subfone = document.getElementById("subs");
-  // Убираем класс отвечающий за попап
+  // Hiding popup
   closeThis.classList.add("hide");
-  // Скрываем элементы
+  // Hiding substrate
   subfone.classList.add("hide");
- 
 }
-
+// Open popup
 function openPopup() {
   let closeThis = document.querySelector(".popup");
   let subfone = document.getElementById("subs");
-  // Убираем класс отвечающий за попап
+  // Make popup visible
   closeThis.classList.remove("hide");
-  // Скрываем элементы
   subfone.classList.remove("hide");
 }
