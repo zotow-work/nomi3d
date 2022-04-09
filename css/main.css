@@ -862,4 +862,72 @@ footer a:hover {
     display: none;
 }
 
+/* Popup */
+.popup {
+        position: fixed;
+        top: 35%;
+        left: 35%;
+        width: 500px;
+        height: 248px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        z-index: 999;
+        background-color: #fff;
+}
 
+
+
+.popup_container {
+text-align: center;
+height: 100%;
+}
+
+.popup_cross {
+    text-align: right;
+    margin-right: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.popup_check_circle img{
+width: 52px;
+height: 52px;
+}
+
+.popup_text span{
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #071A52;
+}
+
+.popup_text p{
+    width: 400px;
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: auto;
+  
+    font-feature-settings: 'kern'off;
+    color: #292C2E;
+}
+
+.substrate {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    background-color: #000000;
+    z-index: 99;
+}
+
+.hide {
+    display: none;
+}

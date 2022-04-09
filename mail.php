@@ -16,7 +16,7 @@ $token = "";
 $chat_id = "";
     $arr = array(
         'Name:' => $name,
-        'Mail:' => $phone,
+        'Mail:' => $email,
         'Company:' => $company
         
     );

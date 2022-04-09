@@ -89,3 +89,23 @@ window.onload = ()=>{
       });
     };
 };
+
+// Закрытие попапа по клику на крестик
+function closePopup() {
+  let closeThis = document.querySelector(".popup");
+  let subfone = document.getElementById("subs");
+  // Убираем класс отвечающий за попап
+  closeThis.classList.add("hide");
+  // Скрываем элементы
+  subfone.classList.add("hide");
+ 
+}
+
+function openPopup() {
+  let closeThis = document.querySelector(".popup");
+  let subfone = document.getElementById("subs");
+  // Убираем класс отвечающий за попап
+  closeThis.classList.remove("hide");
+  // Скрываем элементы
+  subfone.classList.remove("hide");
+}

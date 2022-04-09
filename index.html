@@ -543,7 +543,7 @@
                 </nav>
             </div>
 
-            <form action="mail.php" method="post" class="contacts__form">
+            <form action="mail.php" method="post" class="contacts__form" onsubmit="openPopup()">
                 <input name="name" type="text" placeholder="Name" class="field">
                 <input name="email" type="email" placeholder="E-mail" class="field">
                 <input name="company" type="text" placeholder="Company (optional)" class="field">
@@ -555,6 +555,22 @@
                 </div>
             </form>
         </div>
+    </section>
+<div id="subs" class="substrate hide"></div>
+        <section class="popup hide">
+<div class="popup_container">
+    <div class="popup_cross">
+    <img src="assets/x.svg" alt="" onclick="closePopup()">
+    </div>
+<div class="popup_check_circle">
+        <img src="assets/check-circle.svg" alt="">
+</div>
+<div class="popup_text">
+    <span>Thank you!</span>
+    <p>We received your details and will reply to you as soon as possible</p>
+</div>
+
+</div>
     </section>
 
     <footer>
@@ -597,6 +613,8 @@
             </div>
         </div>
     </footer>
+<!-- PopUp -->
+
 
     <!-- JS -->
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
